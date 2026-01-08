@@ -30,7 +30,7 @@ export function ReportDetail() {
     <div className="py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back Button */}
-        <Link to="/reports" className="inline-flex items-center gap-2 text-(--color-accent) hover:opacity-80 transition-opacity mb-8">
+        <Link to="/reports" className="inline-flex items-center gap-2 text-accent hover:opacity-80 transition-opacity mb-8">
           <ArrowRight className="w-5 h-5" style={{ width: '20px', height: '20px' }} />
           <span className="font-medium">العودة إلى التقارير</span>
         </Link>
@@ -41,54 +41,54 @@ export function ReportDetail() {
             <Badge variant={categoryColors[report.category]}>
               {report.category}
             </Badge>
-            <div className="flex items-center gap-2 text-(--color-text-secondary)">
+            <div className="flex items-center gap-2 text-secondary">
               <Calendar className="w-5 h-5" style={{ width: '20px', height: '20px' }} />
               <span>{formattedDate}</span>
             </div>
           </div>
 
-          <h1 className="text-3xl md:text-4xl font-black text-(--color-text-primary) mb-6">
+          <h1 className="text-3xl md:text-4xl font-black text-primary mb-6">
             {report.title}
           </h1>
 
-          <p className="text-lg text-(--color-text-secondary) leading-relaxed">
+          <p className="text-lg text-secondary leading-relaxed">
             {report.description}
           </p>
         </Card>
 
         {/* Executive Summary */}
-        <Card hover={false} className="mb-8 bg-gradient-to-br from-(--color-accent)/5 to-transparent">
+        <Card hover={false} className="mb-8 bg-accent-10">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-lg bg-(--color-accent)/10 flex items-center justify-center">
-              <FileText className="w-6 h-6 text-(--color-accent)" style={{ width: '24px', height: '24px', color: 'var(--color-accent)' }} />
+            <div className="w-10 h-10 rounded-lg bg-accent-10 flex items-center justify-center">
+              <FileText className="w-6 h-6 text-accent" style={{ width: '24px', height: '24px', color: 'var(--color-accent)' }} />
             </div>
-            <h2 className="text-2xl font-bold text-(--color-text-primary)">
+            <h2 className="text-2xl font-bold text-primary">
               الملخص التنفيذي
             </h2>
           </div>
-          <p className="text-(--color-text-primary) leading-relaxed">
+          <p className="text-primary leading-relaxed">
             {report.summary}
           </p>
         </Card>
 
         {/* Report Sections */}
         <div className="space-y-8">
-          <h2 className="text-2xl font-bold text-(--color-text-primary) mb-6">
+          <h2 className="text-2xl font-bold text-primary mb-6">
             أقسام التقرير
           </h2>
 
           {report.sections.map((section, index) => (
             <Card key={index} hover={false}>
               <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-(--color-accent)/10 flex items-center justify-center">
-                  <span className="text-lg font-bold text-(--color-accent)">{index + 1}</span>
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent-10 flex items-center justify-center">
+                  <span className="text-lg font-bold text-accent">{index + 1}</span>
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-(--color-text-primary) mb-4">
+                  <h3 className="text-xl font-bold text-primary mb-4">
                     {section.title}
                   </h3>
-                  <p className="text-(--color-text-primary) leading-relaxed whitespace-pre-line">
+                  <p className="text-primary leading-relaxed whitespace-pre-line">
                     {section.content}
                   </p>
                 </div>

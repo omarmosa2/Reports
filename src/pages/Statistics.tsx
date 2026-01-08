@@ -56,12 +56,8 @@ export function Statistics() {
         {/* Header */}
         <div className="mb-12">
           <Badge variant="primary" className="mb-4">الإحصائيات</Badge>
-          <h1 className="text-4xl md:text-5xl font-black text-(--color-text-primary) mb-4">
-            نظرة عامة على البيانات
-          </h1>
-          <p className="text-lg text-(--color-text-secondary) max-w-3xl">
-            إحصائيات شاملة ومؤشرات الأداء الرئيسية للتقارير
-          </p>
+          <h1 className="text-4xl md:text-5xl font-black text-primary mb-4">نظرة عامة على البيانات</h1>
+          <p className="text-lg text-secondary max-w-3xl">إحصائيات شاملة ومؤشرات الأداء الرئيسية للتقارير</p>
         </div>
 
         {/* Stats Grid */}
@@ -79,12 +75,8 @@ export function Statistics() {
                   </Badge>
                 </div>
                 
-                <h3 className="text-3xl font-bold text-(--color-text-primary) mb-2">
-                  {stat.value}
-                </h3>
-                <p className="text-(--color-text-secondary) text-sm">
-                  {stat.label}
-                </p>
+                <h3 className="text-3xl font-bold text-primary mb-2">{stat.value}</h3>
+                <p className="text-secondary text-sm">{stat.label}</p>
               </Card>
             )
           })}
@@ -93,21 +85,19 @@ export function Statistics() {
         {/* Category Distribution */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <Card hover={false}>
-            <h2 className="text-2xl font-bold text-(--color-text-primary) mb-6">
-              توزيع التقارير حسب النوع
-            </h2>
+            <h2 className="text-2xl font-bold text-primary mb-6">توزيع التقارير حسب النوع</h2>
             
             <div className="space-y-4">
               {categoryData.map(({ category, count, percentage }) => (
                 <div key={category}>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-(--color-text-primary) font-medium">{category}</span>
-                    <span className="text-(--color-text-secondary) text-sm">{count} تقرير ({percentage}%)</span>
+                    <span className="text-primary font-medium">{category}</span>
+                    <span className="text-secondary text-sm">{count} تقرير ({percentage}%)</span>
                   </div>
-                  <div className="w-full h-3 bg-(--color-bg-secondary) rounded-full overflow-hidden">
+                  <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-(--color-accent) to-(--dark-accent) rounded-full transition-all duration-500"
-                      style={{ width: `${percentage}%` }}
+                      className="h-full rounded-full transition-all duration-500"
+                      style={{ width: `${percentage}%`, background: 'linear-gradient(90deg, var(--color-accent), var(--dark-accent))' }}
                     ></div>
                   </div>
                 </div>
@@ -116,9 +106,7 @@ export function Statistics() {
           </Card>
 
           <Card hover={false}>
-            <h2 className="text-2xl font-bold text-(--color-text-primary) mb-6">
-              الأداء الشهري
-            </h2>
+            <h2 className="text-2xl font-bold text-primary mb-6">الأداء الشهري</h2>
             
             <div className="space-y-6">
               {[
@@ -129,10 +117,10 @@ export function Statistics() {
               ].map((month) => (
                 <div key={month.month}>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-(--color-text-primary) font-medium">{month.month}</span>
-                    <span className="text-(--color-text-secondary) text-sm">{month.value}%</span>
+                    <span className="text-primary font-medium">{month.month}</span>
+                    <span className="text-secondary text-sm">{month.value}%</span>
                   </div>
-                  <div className="w-full h-3 bg-(--color-bg-secondary) rounded-full overflow-hidden">
+                  <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
                     <div
                       className={`h-full ${month.color} rounded-full transition-all duration-500`}
                       style={{ width: `${month.value}%` }}
@@ -150,10 +138,10 @@ export function Statistics() {
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-500/10 flex items-center justify-center">
               <FileText className="w-8 h-8 text-blue-500" style={{ width: '32px', height: '32px', color: '#3b82f6' }} />
             </div>
-            <h3 className="text-xl font-bold text-(--color-text-primary) mb-2">
+            <h3 className="text-xl font-bold text-primary mb-2">
               آخر تحديث
             </h3>
-            <p className="text-(--color-text-secondary)">
+            <p className="text-secondary">
               {new Date(statistics.lastUpdate).toLocaleDateString('ar-SA')}
             </p>
           </Card>
@@ -162,10 +150,10 @@ export function Statistics() {
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500/20 to-green-500/10 flex items-center justify-center">
               <TrendingUp className="w-8 h-8 text-green-500" style={{ width: '32px', height: '32px', color: '#22c55e' }} />
             </div>
-            <h3 className="text-xl font-bold text-(--color-text-primary) mb-2">
+            <h3 className="text-xl font-bold text-primary mb-2">
               معدل الإكمال
             </h3>
-            <p className="text-(--color-text-secondary)">
+            <p className="text-secondary">
               100%
             </p>
           </Card>
@@ -174,10 +162,10 @@ export function Statistics() {
             <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-500/10 flex items-center justify-center">
               <Activity className="w-8 h-8 text-purple-500" style={{ width: '32px', height: '32px', color: '#a855f7' }} />
             </div>
-            <h3 className="text-xl font-bold text-(--color-text-primary) mb-2">
+            <h3 className="text-xl font-bold text-primary mb-2">
               التفاعل
             </h3>
-            <p className="text-(--color-text-secondary)">
+            <p className="text-secondary">
               ممتاز
             </p>
           </Card>

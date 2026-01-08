@@ -20,7 +20,7 @@ export function Reports() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-black text-(--color-text-primary) mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-primary mb-4">
             استعرض جميع التقارير
           </h1>
         </div>
@@ -29,8 +29,8 @@ export function Reports() {
         <div className="mb-8 space-y-6">
           {/* Search Bar */}
           <div className="relative max-w-md">
-            <Search 
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-(--color-text-secondary) w-5 h-5" 
+            <Search
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-secondary w-5 h-5"
               style={{ width: '20px', height: '20px' }}
             />
             <input
@@ -38,7 +38,7 @@ export function Reports() {
               placeholder="البحث في التقارير..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pr-12 pl-4 py-3 rounded-lg bg-(--color-bg-card) border border-(--color-border) text-(--color-text-primary) focus:outline-none focus:ring-2 focus:ring-(--color-accent) transition-all"
+              className="w-full pr-12 pl-4 py-3 rounded-lg bg-card border border-color text-primary focus:outline-none focus:ring-2 transition-all"
             />
           </div>
 
@@ -50,8 +50,8 @@ export function Reports() {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-2 rounded-lg font-medium transition-all ${
                   selectedCategory === category.id
-                    ? 'bg-(--color-accent) text-white'
-                    : 'bg-(--color-bg-card) text-(--color-text-secondary) border border-(--color-border) hover:border-(--color-accent) hover:text-(--color-accent)'
+                    ? 'bg-accent text-white'
+                    : 'bg-card text-secondary border border-color hover:border-accent hover:text-accent'
                 }`}
               >
                 {category.name}
@@ -62,7 +62,7 @@ export function Reports() {
 
         {/* Results Count */}
         <div className="mb-6">
-          <p className="text-(--color-text-secondary)">
+          <p className="text-secondary">
             {filteredReports.length} تقرير متاح
           </p>
         </div>
@@ -76,9 +76,7 @@ export function Reports() {
           </div>
         ) : (
           <div className="text-center py-20">
-            <p className="text-xl text-(--color-text-secondary)">
-              لم يتم العثور على تقارير مطابقة
-            </p>
+            <p className="text-xl text-secondary">لم يتم العثور على تقارير مطابقة</p>
           </div>
         )}
       </div>

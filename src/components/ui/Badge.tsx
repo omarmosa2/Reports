@@ -21,3 +21,6 @@ export function Badge({ children, variant = 'default', className = '' }: BadgePr
     </span>
   )
 }
+
+// Provide explicit default export to help bundlers and HMR consistency
+export default Badge
