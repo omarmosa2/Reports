@@ -31,18 +31,18 @@ export function ReportCard({ report }: ReportCardProps) {
           <Badge variant={categoryColors[report.category]}>
             {report.category}
           </Badge>
-          <div className="flex items-center gap-2 text-(--color-text-secondary) text-sm">
+          <div className="flex items-center gap-2 text-secondary text-sm">
             <Calendar className="w-4 h-4" style={{ width: '16px', height: '16px' }} />
             <span>{formattedDate}</span>
           </div>
         </div>
 
         {/* Content */}
-        <h3 className="text-xl font-bold text-(--color-text-primary) mb-3 line-clamp-2">
+        <h3 className="text-xl font-bold text-primary mb-3 line-clamp-2">
           {report.title}
         </h3>
         
-        <p className="text-(--color-text-secondary) mb-6 line-clamp-3 flex-1">
+        <p className="text-secondary mb-6 line-clamp-3 flex-1">
           {report.description}
         </p>
 

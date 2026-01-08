@@ -33,21 +33,22 @@ export function Gallery() {
   };
 
   return (
-    <div className="min-h-screen bg-(--color-bg-primary) py-12">
+    <div className="min-h-screen bg-primary py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-(--color-accent) to-(--dark-accent) rounded-xl flex items-center justify-center">
-              <ImageIcon
-                style={{ width: "24px", height: "24px", color: "white" }}
-              />
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center"
+              style={{ background: 'linear-gradient(135deg, var(--color-accent), var(--dark-accent))' }}
+            >
+              <ImageIcon style={{ width: "24px", height: "24px", color: "white" }} />
             </div>
-            <h1 className="text-4xl font-bold text-(--color-text-primary)">
+            <h1 className="text-4xl font-bold text-primary">
               معرض الصور
             </h1>
           </div>
-          <p className="text-lg text-(--color-text-secondary) max-w-2xl mx-auto">
+          <p className="text-lg text-secondary max-w-2xl mx-auto">
             صور لمجموعة من الأعمال خلال الشهر السابق{" "}
           </p>
         </div>
@@ -60,11 +61,9 @@ export function Gallery() {
 
         {/* Image Count */}
         <div className="text-center mb-8">
-          <p className="text-(--color-text-secondary)">
+          <p className="text-secondary">
             عرض{" "}
-            <span className="font-bold text-(--color-accent)">
-              {filteredImages.length}
-            </span>{" "}
+            <span className="font-bold text-accent">{filteredImages.length}</span>{" "}
             صورة
           </p>
         </div>
@@ -83,16 +82,13 @@ export function Gallery() {
         {/* Empty State */}
         {filteredImages.length === 0 && (
           <div className="text-center py-16">
-            <div className="w-24 h-24 mx-auto mb-6 bg-(--color-bg-secondary) rounded-full flex items-center justify-center">
-              <ImageIcon
-                style={{ width: "48px", height: "48px" }}
-                className="text-(--color-text-secondary)"
-              />
+            <div className="w-24 h-24 mx-auto mb-6 bg-secondary rounded-full flex items-center justify-center">
+              <ImageIcon style={{ width: "48px", height: "48px" }} className="text-secondary" />
             </div>
-            <h3 className="text-xl font-bold text-(--color-text-primary) mb-2">
+            <h3 className="text-xl font-bold text-primary mb-2">
               لا توجد صور في هذه الفئة
             </h3>
-            <p className="text-(--color-text-secondary)">
+            <p className="text-secondary">
               جرب تصفية مختلفة لاستكشاف المزيد من الصور
             </p>
           </div>

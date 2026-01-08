@@ -155,7 +155,7 @@ export function Home() {
                       style={{ width: "32px", height: "32px" }}
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-(--color-text-primary) mb-3">
+                  <h3 className="text-xl font-bold text-primary mb-3">
                     {feature.title}
                   </h3>
                   <p className="text-secondary">

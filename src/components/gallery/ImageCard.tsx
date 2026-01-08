@@ -16,7 +16,7 @@ export function ImageCard({ image, onClick }: ImageCardProps) {
       onClick={onClick}
     >
       {/* Image Container */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-(--color-bg-secondary)">
+      <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
         {/* Placeholder while loading */}
         {!isLoaded && (
           <div 

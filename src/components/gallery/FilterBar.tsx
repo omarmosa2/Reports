@@ -14,8 +14,8 @@ export function FilterBar({ activeCategory, onCategoryChange }: FilterBarProps) 
           onClick={() => onCategoryChange(category.id)}
           className={`px-6 py-3 rounded-lg font-medium smooth-transition ${
             activeCategory === category.id
-              ? 'bg-(--color-accent) text-white shadow-lg'
-              : 'bg-(--color-bg-card) text-(--color-text-primary) border border-(--color-border) hover:border-(--color-accent) hover:text-(--color-accent)'
+              ? 'bg-accent text-white shadow-lg'
+              : 'bg-card text-primary border border-color hover:border-accent hover:text-accent'
           }`}
         >
           {category.label}
