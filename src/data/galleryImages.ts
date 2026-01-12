@@ -35,26 +35,26 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: '2',
-    url: '/assets/flag.png',
-    title: 'بلاغ عملية ميدانية',
+    url: '/assets/1.jpeg',
+    title: 'خرائط عمل وزارة الدفاع',
     titleEn: '',
-    category: 'Reports',
+    category: 'GIS',
     categoryAr: 'البلاغات',
     attribution: '',
     photographerUrl: '',
-    description: 'توثيق شامل للعمليات الميدانية والبلاغات',
+    description: '',
     placeholderColor: '#3A6462'
   },
   {
     id: '3',
-    url: '/assets/flag.png',
-    title: 'استطلاع جوي للمنطقة',
+    url: '/assets/2.jpeg',
+    title: 'خرائط عمل وزارة الدفاع',
     titleEn: '',
-    category: 'Dron',
+    category: 'GIS',
     categoryAr: 'الاستطلاع الجوي',
     attribution: '',
     photographerUrl: '',
-    description: 'صور استطلاع جوي عالية الدقة للمناطق المستهدفة',
+    description: '',
     placeholderColor: '#26260c'
   }
   
