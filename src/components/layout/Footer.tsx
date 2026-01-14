@@ -57,7 +57,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-color mt-8 pt-8 text-center">
           <p className="text-secondary text-sm">
-            © {currentYear} تقارير العمليات. جميع الحقوق محفوظة.
+            © {currentYear} صمم من قبل المهندس عمر موسى
           </p>
         </div>
       </div>

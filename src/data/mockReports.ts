@@ -35,16 +35,21 @@ export const mockReports: Report[] = [
       {
         title: "طباعة الخرائط",
         titleEn: "Completed Maintenance",
-        content:`طباعة أكثر من 15 خريطة للمديريات
-        طباعة 65 خريطة للشيخ مقصود والأشرفية لوزارة الدفاع`,
+        content: `طباعة أكثر من 15 خريطة للمديريات
+        طباعة 245 خريطة للشيخ مقصود والأشرفية لوزارة الدفاع
+        طباعة خريطة لمناطق استهداف الطيران المسير لمدينة حلب`,
         contentEn:
           "156 maintenance requests were completed during the month, including 128 routine and 28 emergency maintenance. All requests were resolved with a 98% success rate, with an average response time of 2.5 hours for emergency requests.",
       },
       {
         title: "الطبقات",
         titleEn: "Updates and Improvements",
-        content:`تم اضافة جميع طبقات الشيخ مقصود والأشرفية إلى الشاشة التفاعلية في غرفة العمليات
+        content: `تم اضافة جميع طبقات الشيخ مقصود والأشرفية إلى الشاشة التفاعلية في غرفة العمليات
         تم تجميع كامل طبقات الشيخ مقصود والأشرفية في مجلد واحد
+        تجهيز طبقة مناطق السيطرة على حي الشيخ مقصود 
+        البدء بتجهيز طبقة تشمل النقاط الطبية للمديريات
+        تجهيز طبقة عن مناطق استهداف الطيران المسير لمدينة حلب
+        تجهيز طبقة للدوريات الجديدة التي ستنتشر في حيي الشيخ مقصود والأشرفية
 
         `,
         contentEn:
@@ -55,16 +60,25 @@ export const mockReports: Report[] = [
         titleEn: "Future Plan",
         content: `تقديم تدريب على برنامج Alpine Quist للمتدربين القادمين من المديريات في حلب وريفها
          تقديم تدريب تصميم جرافيكي و أكسل و QGIS للأخوة ضمن النوبات
-        تقديم تدريب QGIS للمتدربين القادمين من المديريات في حلب وريفها
- تقديم تدريب Excel للمتدربين القادمين من المديريات في حلب وريفها`,
+         تقديم تدريب QGIS للمتدربين القادمين من المديريات في حلب وريفها
+         تقديم تدريب Excel للمتدربين القادمين من المديريات في حلب وريفها
+         تقديم تدريب على برنامج QGIS للفريق المناوب قدمه الأخ أبو ربيع 
+         تقديم تدريب على برامج التصميم للفريق المناوب قدمه الأخ أبو زيد 
+         تقديم تدريب على برنامج Excel للفريق المناوب قدمه الأخ أبو ياسر
+         تقديم تدريب على برنامج Excel للفريق المناوب قدمه الأخ أبو جندل
+
+ `,
         contentEn:
           "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
       },
       {
-        title: "الأعمال المتكررة",
+        title: "الدعم الفني",
         titleEn: "Recurring tasks",
         content: `تقدير الدعم الفني لكامل الأقسام 
-        المناوبة في غرفة العلميات بشكل مستمر`,
+        المناوبة في غرفة العلميات بشكل مستمر
+        كتابة تقرير سري لقسم التنصت مع كافة المعلومات الموجهة
+        إنشاء ملف Excel لقسم البلاغات يتضمن معلومات أقسام الشرطةوالدراسات والأمن في مدينة حلب
+        `,
         contentEn:
           "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
       },
@@ -73,7 +87,12 @@ export const mockReports: Report[] = [
         titleEn: "Recurring tasks",
         content: `زيارة السيد وزير الداخلية ومعاونيه ومحافظ حلب أثناء تقديم تدريب الأكسل وتم الإثناء على العمل بتاريخ 03/01/2026
       	زيارة العميد محمد عبد الغني (أبو حذيفة) مع ضيوف الساعة 11:00 مساءً اثناء تأدية المهام 03/01/2026
-        زيارة العميد محمد عبدالغني الساعة 03:00 مساءً بتاريخ 06/01/2026`,
+        زيارة العميد محمد عبدالغني الساعة 03:00 مساءً بتاريخ 06/01/2026
+        زيارة العميد محمد عبدالغني الساعة 11:00 صباحاً بتاريخ 10/01/2026
+        زيارة العميد محمد عبدالغني الساعة 03:00 مساءً بتاريخ 10/01/2026
+        زيارة العميد محمد عبدالغني ورئيس فرع العمليات أبو مصطفى الساعة 09:00 مساءً بتاريخ 10/01/2026
+
+        `,
         contentEn:
           "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
       },
@@ -81,7 +100,18 @@ export const mockReports: Report[] = [
         title: "التحديات",
         titleEn: "Challenges",
         content: `صعوبة استخدام بعض الأجهزة بسبب فيروس قد أصابها وبحاجة لقدوم قسم المعلومات من اجل الصيانة 
-        نقص اللوجستيات اللازمة للعمل`,
+        نقص اللوجستيات اللازمة للعمل
+        تعرض المبنى للقصف من الطيران المسير واستشهاد أخ واصابة عدد من الأخوة
+        إلغاء مكان النوم بحاجة ماسة لإيجاد مكان بديل
+        `,
+        contentEn:
+          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+      },
+      {
+        title: "العمل الميداني",
+        titleEn: "fild work",
+        content: ` جولات ميدانية لحي الشيخ مقصود وجمع بيانات مكانية ووصفية عن الأنفاق الموجودة
+        `,
         contentEn:
           "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
       },
