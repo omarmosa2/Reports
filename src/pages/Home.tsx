@@ -69,7 +69,7 @@ export function Home() {
             <div className="relative flex justify-center md:justify-end">
               <div className="mr-0 md:mr-6 w-full max-w-xs md:max-w-md">
                 <img
-                  src="assets/Syrian_logo_icon_gold.png"
+                  src="/assets/Syrian_logo_icon_gold.png"
                   alt="شعار"
                   className="w-full h-auto object-contain"
                 />
