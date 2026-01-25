@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Calendar, ArrowLeft } from 'lucide-react'
+import { Calendar } from 'lucide-react'
 import { Card } from '../ui/Card'
 import { Badge } from '../ui/Badge'
 import { Button } from '../ui/Button'

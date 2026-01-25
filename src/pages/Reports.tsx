@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Search } from 'lucide-react'
-import { Badge } from '../components/ui/Badge'
 import { ReportCard } from '../components/reports/ReportCard'
 import { mockReports, reportCategories } from '../data/mockReports'
 

@@ -185,7 +185,6 @@ export async function exportReportToPDF(report: Report) {
 
       const pdf = new jsPDF('p', 'mm', 'a4')
       const pageHeight = pdf.internal.pageSize.getHeight()
-      const pageWidth = pdf.internal.pageSize.getWidth()
       
       let heightLeft = imgHeight
       let position = 0
@@ -238,9 +237,9 @@ function exportReportToPDFFromData(report: Report) {
   const addText = (text: string, fontSize: number, isBold = false, color?: [number, number, number]) => {
     doc.setFontSize(fontSize)
     if (isBold) {
-      doc.setFont(undefined, 'bold')
+      doc.setFont('helvetica', 'bold')
     } else {
-      doc.setFont(undefined, 'normal')
+      doc.setFont('helvetica', 'normal')
     }
     
     if (color) {
