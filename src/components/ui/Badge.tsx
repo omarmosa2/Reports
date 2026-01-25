@@ -10,13 +10,29 @@ export function Badge({ children, variant = 'default', className = '' }: BadgePr
   const variants = {
     default: 'bg-secondary text-primary',
     primary: 'bg-accent-10 text-accent',
-    secondary: 'bg-card text-primary',
-    success: 'bg-green-500/10 text-green-600 dark:text-green-400',
-    warning: 'bg-orange-500/10 text-orange-600 dark:text-orange-400'
+    secondary: 'bg-card text-primary border border-color',
+    success: 'text-success',
+    warning: 'text-warning'
   }
 
+  const variantStyles = {
+    success: {
+      backgroundColor: 'var(--color-success-bg)',
+      color: 'var(--color-success)'
+    },
+    warning: {
+      backgroundColor: 'var(--color-warning-bg)',
+      color: 'var(--color-warning)'
+    }
+  }
+
+  const hasCustomStyle = variant === 'success' || variant === 'warning'
+
   return (
-    <span className={`px-3 py-1 text-sm rounded-full font-medium ${variants[variant]} ${className}`}>
+    <span 
+      className={`px-3 py-1 text-sm rounded-full font-medium ${variants[variant]} ${className}`}
+      style={hasCustomStyle ? variantStyles[variant] : undefined}
+    >
       {children}
     </span>
   )

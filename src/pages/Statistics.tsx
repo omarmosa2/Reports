@@ -21,32 +21,40 @@ export function Statistics() {
       label: 'إجمالي التقارير',
       value: statistics.totalReports,
       trend: '+12%',
-      color: 'text-blue-500',
-      bgColor: 'bg-blue-500/10'
+      color: 'text-blue',
+      bgColor: 'bg-blue-bg',
+      colorVar: '--color-blue',
+      bgVar: '--color-blue-bg'
     },
     {
       icon: BarChart3,
       label: 'أنواع التقارير',
       value: statistics.categories,
       trend: 'ثابت',
-      color: 'text-green-500',
-      bgColor: 'bg-green-500/10'
+      color: 'text-green',
+      bgColor: 'bg-green-bg',
+      colorVar: '--color-green',
+      bgVar: '--color-green-bg'
     },
     {
       icon: TrendingUp,
       label: 'معدل النمو',
       value: '25%',
       trend: '+8%',
-      color: 'text-purple-500',
-      bgColor: 'bg-purple-500/10'
+      color: 'text-purple',
+      bgColor: 'bg-purple-bg',
+      colorVar: '--color-purple',
+      bgVar: '--color-purple-bg'
     },
     {
       icon: Activity,
       label: 'النشاط الشهري',
       value: '100%',
       trend: '+15%',
-      color: 'text-orange-500',
-      bgColor: 'bg-orange-500/10'
+      color: 'text-orange',
+      bgColor: 'bg-orange-bg',
+      colorVar: '--color-orange',
+      bgVar: '--color-orange-bg'
     }
   ]
 
@@ -67,8 +75,14 @@ export function Statistics() {
             return (
               <Card key={stat.label}>
                 <div className="flex items-start justify-between mb-4">
-                  <div className={`w-12 h-12 rounded-xl ${stat.bgColor} flex items-center justify-center`}>
-                    <Icon className={`w-6 h-6 ${stat.color}`} style={{ width: '24px', height: '24px' }} />
+                  <div 
+                    className="w-12 h-12 rounded-xl flex items-center justify-center"
+                    style={{ backgroundColor: `var(${stat.bgVar})` }}
+                  >
+                    <Icon 
+                      className="w-6 h-6" 
+                      style={{ width: '24px', height: '24px', color: `var(${stat.colorVar})` }} 
+                    />
                   </div>
                   <Badge variant="success" className="text-xs">
                     {stat.trend}
@@ -95,10 +109,10 @@ export function Statistics() {
                     <span className="text-secondary text-sm">{count} تقرير ({percentage}%)</span>
                   </div>
                   <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
-                    <div
-                      className="h-full rounded-full transition-all duration-500"
-                      style={{ width: `${percentage}%`, background: 'linear-gradient(90deg, var(--color-accent), var(--dark-accent))' }}
-                    ></div>
+                  <div
+                    className="h-full rounded-full transition-all duration-500 gradient-accent"
+                    style={{ width: `${percentage}%` }}
+                  ></div>
                   </div>
                 </div>
               ))}
@@ -110,10 +124,10 @@ export function Statistics() {
             
             <div className="space-y-6">
               {[
-                { month: 'ديسمبر', value: 85, color: 'bg-blue-500' },
-                { month: 'نوفمبر', value: 72, color: 'bg-green-500' },
-                { month: 'أكتوبر', value: 90, color: 'bg-purple-500' },
-                { month: 'سبتمبر', value: 68, color: 'bg-orange-500' }
+                { month: 'ديسمبر', value: 85, colorVar: '--color-blue' },
+                { month: 'نوفمبر', value: 72, colorVar: '--color-green' },
+                { month: 'أكتوبر', value: 90, colorVar: '--color-purple' },
+                { month: 'سبتمبر', value: 68, colorVar: '--color-orange' }
               ].map((month) => (
                 <div key={month.month}>
                   <div className="flex items-center justify-between mb-2">
@@ -122,8 +136,8 @@ export function Statistics() {
                   </div>
                   <div className="w-full h-3 bg-secondary rounded-full overflow-hidden">
                     <div
-                      className={`h-full ${month.color} rounded-full transition-all duration-500`}
-                      style={{ width: `${month.value}%` }}
+                      className="h-full rounded-full transition-all duration-500"
+                      style={{ width: `${month.value}%`, backgroundColor: `var(${month.colorVar})` }}
                     ></div>
                   </div>
                 </div>
@@ -135,8 +149,14 @@ export function Statistics() {
         {/* Additional Insights */}
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500/20 to-blue-500/10 flex items-center justify-center">
-              <FileText className="w-8 h-8 text-blue-500" style={{ width: '32px', height: '32px', color: '#3b82f6' }} />
+            <div 
+              className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: 'var(--color-blue-bg)' }}
+            >
+              <FileText 
+                className="w-8 h-8" 
+                style={{ width: '32px', height: '32px', color: 'var(--color-blue)' }} 
+              />
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">
               آخر تحديث
@@ -147,8 +167,14 @@ export function Statistics() {
           </Card>
 
           <Card className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500/20 to-green-500/10 flex items-center justify-center">
-              <TrendingUp className="w-8 h-8 text-green-500" style={{ width: '32px', height: '32px', color: '#22c55e' }} />
+            <div 
+              className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: 'var(--color-green-bg)' }}
+            >
+              <TrendingUp 
+                className="w-8 h-8" 
+                style={{ width: '32px', height: '32px', color: 'var(--color-green)' }} 
+              />
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">
               معدل الإكمال
@@ -159,8 +185,14 @@ export function Statistics() {
           </Card>
 
           <Card className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-500/10 flex items-center justify-center">
-              <Activity className="w-8 h-8 text-purple-500" style={{ width: '32px', height: '32px', color: '#a855f7' }} />
+            <div 
+              className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: 'var(--color-purple-bg)' }}
+            >
+              <Activity 
+                className="w-8 h-8" 
+                style={{ width: '32px', height: '32px', color: 'var(--color-purple)' }} 
+              />
             </div>
             <h3 className="text-xl font-bold text-primary mb-2">
               التفاعل

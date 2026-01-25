@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تقارير فرع العمليات</title>
     <link rel="icon" type="image/png" href="./assets/Syrian_logo_icon_gold.png">
+    <script>
+      // منع الوميض (flash) عند تحميل الصفحة
+      (function() {
+        const theme = localStorage.getItem('theme');
+        const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

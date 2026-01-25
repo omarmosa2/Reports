@@ -27,28 +27,28 @@ export function ReportCard({ report }: ReportCardProps) {
     <Card>
       <div className="flex flex-col h-full">
         {/* Header */}
-        <div className="flex items-start justify-between mb-4">
+        <div className="flex items-start justify-between mb-5">
           <Badge variant={categoryColors[report.category]}>
             {report.category}
           </Badge>
           <div className="flex items-center gap-2 text-secondary text-sm">
-            <Calendar className="w-4 h-4" style={{ width: '16px', height: '16px' }} />
+            <Calendar className="icon-sm" />
             <span>{formattedDate}</span>
           </div>
         </div>
 
         {/* Content */}
-        <h3 className="text-xl font-bold text-primary mb-3 line-clamp-2">
+        <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 line-clamp-2 leading-tight">
           {report.title}
         </h3>
         
-        <p className="text-secondary mb-6 line-clamp-3 flex-1">
+        <p className="text-secondary mb-6 line-clamp-3 flex-1 leading-relaxed">
           {report.description}
         </p>
 
         {/* Footer */}
         <Link to={`/reports/${report.id}`}>
-          <Button variant="outline" className="w-full gap-2">
+          <Button variant="outline" className="w-full gap-2 text-primary hover:bg-accent-10">
             عرض التقرير
           </Button>
         </Link>

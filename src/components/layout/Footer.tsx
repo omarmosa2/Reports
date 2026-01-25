@@ -11,11 +11,8 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div
-                className="w-10 h-10 rounded-lg flex items-center justify-center"
-                style={{ background: 'linear-gradient(135deg, var(--color-accent), var(--dark-accent))' }}
-              >
-                <FileText className="w-6 h-6 text-white" style={{ color: "white", width: "24px", height: "24px" }} />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center gradient-accent">
+                <FileText className="w-6 h-6 text-white" />
               </div>
               <span className="text-lg font-bold text-primary">
                 تقارير احترافية

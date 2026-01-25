@@ -225,6 +225,67 @@ export const galleryImages: GalleryImage[] = [
     photographerUrl: '',
     description: '',
     placeholderColor: '#26260c'
-  }
+  },
+  {
+    id: '19',
+    url: '/assets/19.png',
+    title: 'خريطة مديريات حلب للتوجيه المعنوي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '21',
+    url: '/assets/21.png',
+    title: 'ملف اكسل لبيانات التواصل مع اقسام الشرطة والأمن في حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '22',
+    url: '/assets/22.png',
+    title: 'إنشاء ملفات أكسل لحسابات الشام كاش لقسم الدعم الفني وقسم البلاغات',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '23',
+    url: '/assets/23.png',
+    title: 'إنشاء ملفات أكسل لحسابات الشام كاش لقسم الدعم الفني وقسم البلاغات',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '24',
+    url: '/assets/24.jpg',
+    title: 'استكمال مشروع الأنفاق ورسم طريق للعبور بين الأنفاق',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+
   
 ]

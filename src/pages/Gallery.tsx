@@ -38,11 +38,8 @@ export function Gallery() {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div
-              className="w-12 h-12 rounded-xl flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg, var(--color-accent), var(--dark-accent))' }}
-            >
-              <ImageIcon style={{ width: "24px", height: "24px", color: "white" }} />
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center gradient-accent">
+              <ImageIcon className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-4xl font-bold text-primary">
               معرض الصور

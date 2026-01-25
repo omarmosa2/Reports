@@ -13,7 +13,7 @@ export function Home() {
       titleEn: "Professional Reports",
       description: "تقارير مفصلة ومنظمة بتصميم عصري",
       descriptionEn: "Detailed and organized reports with modern design",
-      color: "text-blue-500",
+      colorVar: "--color-blue",
     },
     {
       icon: TrendingUp,
@@ -21,7 +21,7 @@ export function Home() {
       titleEn: "Advanced Analytics",
       description: "رؤى وتحليلات عميقة لاتخاذ قرارات مستنيرة",
       descriptionEn: "Deep insights and analytics for informed decisions",
-      color: "text-green-500",
+      colorVar: "--color-green",
     },
     {
       icon: Users,
@@ -29,7 +29,7 @@ export function Home() {
       titleEn: "Easy to Use",
       description: "واجهة بسيطة وسهلة للوصول للمعلومات",
       descriptionEn: "Simple and easy interface to access information",
-      color: "text-purple-500",
+      colorVar: "--color-purple",
     },
   ];
 
@@ -84,27 +84,25 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent-10 flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent-10 flex items-center justify-center shadow-sm">
                 <FileText
-                  className="w-8 h-8 text-accent"
-                  style={{
-                    width: "32px",
-                    height: "32px",
-                    color: "var(--color-accent)",
-                  }}
+                  className="w-8 h-8 text-accent icon-xl"
                 />
               </div>
               <h3 className="text-4xl font-bold text-primary mb-2">
                 {statistics.totalReports}
               </h3>
-              <p className="text-secondary">إجمالي التقارير</p>
+              <p className="text-secondary text-lg">إجمالي التقارير</p>
             </Card>
 
             <Card className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center">
+              <div 
+                className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                style={{ backgroundColor: 'var(--color-green-bg)' }}
+              >
                 <TrendingUp
-                  className="w-8 h-8 text-green-500"
-                  style={{ width: "32px", height: "32px", color: "#22c55e" }}
+                  className="icon-xl"
+                  style={{ color: "var(--color-green)" }}
                 />
               </div>
               <h3 className="text-4xl font-bold text-primary mb-2">
@@ -114,10 +112,13 @@ export function Home() {
             </Card>
 
             <Card className="text-center">
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/10 flex items-center justify-center">
+              <div 
+                className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                style={{ backgroundColor: 'var(--color-purple-bg)' }}
+              >
                 <Users
-                  className="w-8 h-8 text-purple-500"
-                  style={{ width: "32px", height: "32px", color: "#a855f7" }}
+                  className="icon-xl"
+                  style={{ color: "var(--color-purple)" }}
                 />
               </div>
               <h3 className="text-4xl font-bold text-primary mb-2">
@@ -149,16 +150,16 @@ export function Home() {
               const Icon = feature.icon;
               return (
                 <Card key={feature.title} className="text-center">
-                  <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent-10 flex items-center justify-center`}>
+                  <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-accent-10 flex items-center justify-center shadow-sm">
                     <Icon
-                      className={`w-8 h-8 ${feature.color}`}
-                      style={{ width: "32px", height: "32px" }}
+                      className="icon-xl"
+                      style={{ color: `var(${feature.colorVar})` }}
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">
+                  <h3 className="text-xl md:text-2xl font-bold text-primary mb-3">
                     {feature.title}
                   </h3>
-                  <p className="text-secondary">
+                  <p className="text-secondary leading-relaxed">
                     {feature.description}
                   </p>
                 </Card>

@@ -17,8 +17,8 @@ export function Button({
   
   const variants = {
     primary: 'btn-primary',
-    secondary: 'px-6 py-3 rounded-lg bg-secondary hover:bg-card',
-    outline: 'px-6 py-3 rounded-lg border-2 border-color hover:border-accent hover:text-accent'
+    secondary: 'px-6 py-3 rounded-xl bg-secondary hover:bg-card shadow-sm hover:shadow-md transition-all',
+    outline: 'px-6 py-3 rounded-xl border-2 border-color hover:border-accent hover:text-accent shadow-sm hover:shadow-md transition-all'
   }
   
   const sizes = {

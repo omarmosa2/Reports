@@ -21,11 +21,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div
-              className="w-10 h-10 rounded-lg flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg, var(--color-accent), var(--dark-accent))' }}
-            >
-              <FileText className="w-6 h-6 text-white" style={{ color: 'white' }} />
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center gradient-accent">
+              <FileText className="w-6 h-6 text-white" />
             </div>
             <span className="text-xl font-bold text-primary">تقارير العمليات</span>
           </Link>
