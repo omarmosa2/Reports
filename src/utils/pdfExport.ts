@@ -28,26 +28,18 @@ function createExportHTML(report: Report): HTMLElement {
   const style = document.createElement('style')
   style.textContent = `
     @font-face {
-      font-family: 'ITF Qomra Arabic';
-      src: url('/itf_qomra_arabic_fonts/itfQomraArabic-Regular.woff2') format('woff2'),
-           url('/itf_qomra_arabic_fonts/itfQomraArabic-Regular.woff') format('woff');
+      font-family: 'Amiri';
+      src: url('https://fonts.gstatic.com/s/amiri/v27/J7aRnpd8CGxBHpUrtLMA7w.woff2') format('woff2'),
+           url('https://fonts.gstatic.com/s/amiri/v27/J7aRnpd8CGxBHpUgtLM.woff') format('woff');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
-      font-family: 'ITF Qomra Arabic';
-      src: url('/itf_qomra_arabic_fonts/itfQomraArabic-Bold.woff2') format('woff2'),
-           url('/itf_qomra_arabic_fonts/itfQomraArabic-Bold.woff') format('woff');
+      font-family: 'Amiri';
+      src: url('https://fonts.gstatic.com/s/amiri/v27/J7aRnpd8CGxBHpUrSLIA7w.woff2') format('woff2'),
+           url('https://fonts.gstatic.com/s/amiri/v27/J7aRnpd8CGxBHpUrSLIA7g.woff') format('woff');
       font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'ITF Qomra Arabic';
-      src: url('/itf_qomra_arabic_fonts/itfQomraArabic-Black.woff2') format('woff2'),
-           url('/itf_qomra_arabic_fonts/itfQomraArabic-Black.woff') format('woff');
-      font-weight: 900;
       font-style: normal;
       font-display: swap;
     }
@@ -65,7 +57,9 @@ function createExportHTML(report: Report): HTMLElement {
     color: #000000;
     padding: 40px;
     width: 800px;
+    min-height: 1123px; /* A4 height in pixels */
     line-height: 1.8;
+    box-sizing: border-box;
   `
 
   const formattedDate = new Date(report.date).toLocaleDateString('ar-SA', {

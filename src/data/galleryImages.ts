@@ -286,6 +286,78 @@ export const galleryImages: GalleryImage[] = [
     description: '',
     placeholderColor: '#26260c'
   },
+  {
+    id: '25',
+    url: '/assets/25.jpg',
+    title: 'تحديث خريطة السيطرة',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '26',
+    url: '/assets/26.jpg',
+    title: 'خريطة طرقات حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '27',
+    url: '/assets/27.jpg',
+    title: 'تصميم غلاف',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '28',
+    url: '/assets/28.jpg',
+    title: 'تصميم خريطة مناطق سيطرة ',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '29',
+    url: '/assets/29.jpg',
+    title: 'تصميم خريطة مناطق سيطرة',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '30',
+    url: '/assets/30.jpg',
+    title: 'تصميم خريطة مناطق سيطرة',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
 
   
 ]

@@ -21,9 +21,9 @@ export const mockReports: Report[] = [
   {
     id: "1",
     title: "تقرير قسم الدعم الفني - كانون الثاني 2026",
-    titleEn: "",
+    titleEn: "Technical Support Department Report - January 2026",
     description: "تقرير شامل عن الأعمال المنجزة خلال شهر كانون الثاني",
-    descriptionEn: "",
+    descriptionEn: "Comprehensive report on completed tasks during January",
     category: "قسم الدعم الفني",
     categoryEn: "technical_support",
     date: "2026-01-10",
@@ -72,7 +72,7 @@ export const mockReports: Report[] = [
 
  `,
         contentEn:
-          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+          "Resolved 156 maintenance requests (128 routine, 28 emergency) with 98% success rate and 2.5h avg emergency response time.",
       },
       {
         title: "الدعم الفني",
@@ -122,6 +122,124 @@ export const mockReports: Report[] = [
       },
     ],
   },
+  {
+    id: "2",
+    title: "تقرير قسم الدعم الفني - شباط 2026",
+    titleEn: "Technical Support Department Report - 2026",
+    description: "تقرير شامل عن الأعمال المنجزة خلال شهر  شباط",
+    descriptionEn: "Comprehensive report on completed tasks during January",
+    category: "قسم الدعم الفني",
+    categoryEn: "technical_support",
+    date: "2026-02-01",
+    summary:
+      "يوضح هذا التقرير جميع الأعمال والمهام الدورية والطارئة التي تمت خلال الشهر.",
+    summaryEn:
+      "This report outlines all routine and emergency maintenance, technical problem resolution, and system updates completed during the month.",
+    sections: [
+      {
+        title: "طباعة الخرائط",
+        titleEn: "Completed Maintenance",
+        content: `طباعة أكثر من 15 خريطة للمديريات
+        طباعة 245 خريطة للشيخ مقصود والأشرفية لوزارة الدفاع
+        طباعة خريطة لمناطق استهداف الطيران المسير لمدينة حلب
+        إنشاء خريطة جديدة لمديريات حلب وطباعتها على طابعة الرول 
+        رسم خريطة السيطرة الحديثة وطباعتها`,
+        contentEn:
+          "156 maintenance requests were completed during the month, including 128 routine and 28 emergency maintenance. All requests were resolved with a 98% success rate, with an average response time of 2.5 hours for emergency requests.",
+      },
+      {
+        title: "الطبقات",
+        titleEn: "Updates and Improvements",
+        content: `تم اضافة جميع طبقات الشيخ مقصود والأشرفية إلى الشاشة التفاعلية في غرفة العمليات
+        تم تجميع كامل طبقات الشيخ مقصود والأشرفية في مجلد واحد
+        تجهيز طبقة مناطق السيطرة على حي الشيخ مقصود 
+        البدء بتجهيز طبقة تشمل النقاط الطبية للمديريات
+        تجهيز طبقة عن مناطق استهداف الطيران المسير لمدينة حلب
+        تجهيز طبقة للدوريات الجديدة التي ستنتشر في حيي الشيخ مقصود والأشرفية
+        استكمال مشروع الأنفاق ورسم طريق للعبور بين الأنفاق
+        إنشاء مشروع جديد على برنامج َQGIS يمثل مكان تواجد دوريات الشرطة والأمن`,
+        contentEn:
+          "12 security updates were applied to main systems, and core software was updated for 45 devices. Network performance was also improved by 35% through communication equipment upgrades.",
+      },
+      {
+        title: "التدريبات",
+        titleEn: "Future Plan",
+        content: `تقديم تدريب على برنامج Alpine Quist للمتدربين القادمين من المديريات في حلب وريفها
+         تقديم تدريب تصميم جرافيكي و أكسل و QGIS للأخوة ضمن النوبات
+         تقديم تدريب QGIS للمتدربين القادمين من المديريات في حلب وريفها
+         تقديم تدريب Excel للمتدربين القادمين من المديريات في حلب وريفها
+         تقديم تدريب على برنامج QGIS للفريق المناوب قدمه الأخ أبو ربيع 
+         تقديم تدريب على برامج التصميم للفريق المناوب قدمه الأخ أبو زيد 
+         تقديم تدريب على برنامج Excel للفريق المناوب قدمه الأخ أبو ياسر
+         تقديم تدريب على برنامج Excel للفريق المناوب قدمه الأخ أبو جندل
+         تقديم تدريب على برنامج QGIS للفريق المناوب قدمه الأخ أبو ربيع 
+
+ `,
+        contentEn:
+          "Resolved 156 maintenance requests (128 routine, 28 emergency) with 98% success rate and 2.5h avg emergency response time.",
+      },
+      {
+        title: "الدعم الفني",
+        titleEn: "Recurring tasks",
+        content: `تقدير الدعم الفني لكامل الأقسام 
+        المناوبة في غرفة العلميات بشكل مستمر
+        كتابة تقرير سري لقسم التنصت مع كافة المعلومات الموجهة
+        إنشاء ملف Excel لقسم البلاغات يتضمن معلومات أقسام الشرطةوالدراسات والأمن في مدينة حلب
+        استكمال إنشاء ملف أكسل الخاص بـ أقسام الشرطة والأمن في مدينة حلب
+        إنشاء ملفات أكسل لحسابات الشام كاش لقسم الدعم الفني وقسم البلاغات
+        انشاء ملف اكسل يمثل مسارات طيران الدرون `,
+        contentEn:
+          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+      },
+      {
+        title: "الزيارات",
+        titleEn: "Recurring tasks",
+        content: `زيارة السيد وزير الداخلية ومعاونيه ومحافظ حلب أثناء تقديم تدريب الأكسل وتم الإثناء على العمل بتاريخ 03/01/2026
+      	زيارة العميد محمد عبد الغني (أبو حذيفة) مع ضيوف الساعة 11:00 مساءً اثناء تأدية المهام 03/01/2026
+        زيارة العميد محمد عبدالغني الساعة 03:00 مساءً بتاريخ 06/01/2026
+        زيارة العميد محمد عبدالغني الساعة 11:00 صباحاً بتاريخ 10/01/2026
+        زيارة العميد محمد عبدالغني الساعة 03:00 مساءً بتاريخ 10/01/2026
+        زيارة العميد محمد عبدالغني ورئيس فرع العمليات أبو مصطفى الساعة 09:00 مساءً بتاريخ 10/01/2026
+      زيارة أبو مصطفى حريتان لقسم الدعم الفني 20/01/2026 والاطلاع على الأعمال المطلوبة والأعمال المنجزة
+        `,
+        contentEn:
+          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+      },
+      {
+        title: "التحديات",
+        titleEn: "Challenges",
+        content: `صعوبة استخدام بعض الأجهزة بسبب فيروس قد أصابها وبحاجة لقدوم قسم المعلومات من اجل الصيانة 
+        نقص اللوجستيات اللازمة للعمل
+        تعرض المبنى للقصف من الطيران المسير واستشهاد أخ واصابة عدد من الأخوة
+        إلغاء مكان النوم بحاجة ماسة لإيجاد مكان بديل
+        `,
+        contentEn:
+          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+      },
+      {
+        title: "العمل الميداني",
+        titleEn: "fild work",
+        content: ` جولات ميدانية لحي الشيخ مقصود وجمع بيانات مكانية ووصفية عن الأنفاق الموجودة
+        `,
+        contentEn:
+          "Next month will focus on implementing a new proactive monitoring system for early problem detection and training the team on the latest technical support techniques.",
+      },
+    ],
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     id: "2",
     title: "تقرير البلاغات الواردة - الأسبوع الأول من يناير",
