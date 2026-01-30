@@ -455,5 +455,29 @@ export const galleryImages: GalleryImage[] = [
     description: '',
     placeholderColor: '#26260c'
   },
+  {
+    id: '39',
+    url: '/assets/39.jpeg',
+    title: 'خريطة سيطرة',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '40',
+    url: '/assets/40.jpeg',
+    title: 'ممر انساني في مديرية عين العرب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
   
 ]
