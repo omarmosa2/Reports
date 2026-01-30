@@ -358,6 +358,102 @@ export const galleryImages: GalleryImage[] = [
     description: '',
     placeholderColor: '#26260c'
   },
-
+  {
+    id: '31',
+    url: '/assets/31.png',
+    title: 'مسارات طيران الدرون المسار الأول',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '32',
+    url: '/assets/32.png',
+    title: 'مسارات طيران الدرون المسار الثاني',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  
+  {
+    id: '33',
+    url: '/assets/33.png',
+    title: 'مسارات طيران الدرون المسار الثالث',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '34',
+    url: '/assets/34.png',
+    title: 'مسارات طيران الدرون المسار الثالث',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '35',
+    url: '/assets/35.jpeg',
+    title: 'مديرية عين العرب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '36',
+    url: '/assets/36.jpeg',
+    title: 'مديرية عين العرب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '37',
+    url: '/assets/37.jpeg',
+    title: 'مديريات حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '38',
+    url: '/assets/38.jpeg',
+    title: 'مديريات حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
   
 ]
