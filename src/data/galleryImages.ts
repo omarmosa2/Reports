@@ -479,5 +479,138 @@ export const galleryImages: GalleryImage[] = [
     description: '',
     placeholderColor: '#26260c'
   },
+  {
+    id: '41',
+    url: '/assets/41.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '42',
+    url: '/assets/42.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  
+  {
+    id: '43',
+    url: '/assets/43.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '44',
+    url: '/assets/44.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '46',
+    url: '/assets/46.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '47',
+    url: '/assets/47.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '49',
+    url: '/assets/49.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '50',
+    url: '/assets/50.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '51',
+    url: '/assets/51.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '52',
+    url: '/assets/52.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '53',
+    url: '/assets/53.png',
+    title: 'تقرير أطلس يومي',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
   
 ]
