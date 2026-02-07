@@ -612,5 +612,29 @@ export const galleryImages: GalleryImage[] = [
     description: '',
     placeholderColor: '#26260c'
   },
+  {
+    id: '54',
+    url: '/assets/54.png',
+    title: 'خريطة أحياء حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
+  {
+    id: '55',
+    url: '/assets/55.png',
+    title: 'خريطة مديريات حلب',
+    titleEn: '',
+    category: 'GIS',
+    categoryAr: 'قسم الدعم الفني والتحليل',
+    attribution: '',
+    photographerUrl: '',
+    description: '',
+    placeholderColor: '#26260c'
+  },
   
 ]
